@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="New Demo Suite File">
+    <parameter name="browsername" value=""/>
 
-    <test name="Login to SwagLabs With Valid Credientials">
+    <test name="Login to OrangeHRM With Valid Credientials">
         <classes>
-            <class name="testcases.TC01_Login">
+            <class name="testcases.TC03_AddNewUserFromAdmin">
                 <methods>
-                    <include name="loginToSwagLabsWithValidCredientials_P"/>
+                    <include name="AddNewUserWithValidCredientials_P"/>
                 </methods>
             </class>
         </classes>

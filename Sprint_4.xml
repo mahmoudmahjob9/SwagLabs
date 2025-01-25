@@ -2,12 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="New Demo Suite File">
     <parameter name="browsername" value=""/>
-
-    <test name="Navigate Between components of OrangeHRM With Valid Credientials">
+    <test name="Login to OrangeHRM With Valid Credientials">
         <classes>
-            <class name="testcases.TC02_OrangeComponents">
+            <class name="testcases.TC04_AddNewUserFromPIM">
                 <methods>
-                    <include name="navigateBetweenComponentsOfOrangHRMWithValidCredientials_P"/>
+                    <include name="AddNewPIMUserWithValidCredientials_P"/>
                 </methods>
             </class>
         </classes>

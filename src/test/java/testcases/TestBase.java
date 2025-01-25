@@ -15,22 +15,23 @@ import static util.Utility.openBrowserNetworkTab;
 
 public class TestBase {
     //   static   WebDriver driver;
-    String username = "standard_user";
-    String password = "secret_sauce";
+    String loginUsername = "Admin";
+    String loginPassword = "admin123";
 
     @BeforeSuite
     public void beforeSuite() throws Exception {
-        MyScreenRecorder.startRecording("SwagLabs-TestCases");
+        MyScreenRecorder.startRecording("OrangeHRM-TestCases");
     }
 
     @Parameters("browsername")
     @BeforeTest
     public void OpenBrower(@Optional String browsername) throws AWTException {
+       // setDriver(DriverFactory.getNewInstance(browsername));
         setDriver(DriverFactory.getNewInstance(""));
 
         getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
-        getDriver().get("https://www.saucedemo.com/v1/");
+        getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
         // open browser network
         openBrowserNetworkTab();
@@ -39,7 +40,7 @@ public class TestBase {
 
     @AfterTest
     public void TearDown() {
-        //   quitBrowser(getDriver());
+           quitBrowser(getDriver());
     }
 
     @AfterSuite

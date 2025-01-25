@@ -18,9 +18,9 @@ public class P01_LoginPage extends PageBase {
     }
 
     // TODO: define locators using By
-    private final By USERNAME_TEXT=By.id("user-name");
-    private final By PASSWORD_TEXT=By.id("password");
-    private final By LOGIN_BUTTON=By.id("login-button");
+    private final By USERNAME_TEXT=By.name("username");
+    private final By PASSWORD_TEXT=By.name("password");
+    private final By LOGIN_BUTTON=By.xpath("//button[@type='submit']");
 
     // TODO: public action methods
     public P01_LoginPage enterUsername(String username){

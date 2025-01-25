@@ -1,14 +1,10 @@
 package util;
 
-import pages.P02_Inventory;
-
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.security.SecureRandom;
 import java.util.*;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 
